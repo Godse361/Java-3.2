@@ -3,19 +3,14 @@ public class Main {
 
         int clienBalance = 100;
         int operation = 1415;
-        int limitForBonus = 1000;
 
-        if (operation > limitForBonus) {
-
-            int bonus = (operation - limitForBonus) / 100;
-            int totalBalance = clienBalance + operation + bonus;
-
-            System.out.println("Ваш счет составляет " + totalBalance + ". Вам зачислено " + bonus + " бонусов.");
+        if (operation > 1000) {
+            int bonus = (operation) / 100;
+            System.out.println( "Вам зачислено " + bonus + " бонусов.");
         } else {
-
-            int totalBalance = clienBalance + operation;
-
-            System.out.println("Ваш счет составляет " + totalBalance + ". Вам зачислено 0 бонусов.");
         }
+
+        int totalBalance = clienBalance + operation;
+        System.out.println("Ваш счет составляет " + totalBalance + " руб.");
     }
 }
